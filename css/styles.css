@@ -7,46 +7,34 @@ body, h1, h2, h3, p, ul, li, a, img, button {
     font-family: Arial, sans-serif;
     box-sizing: border-box;
     color: white;
-    
-}
-body {
-    background: url('/assets/img/fonte-de-galaxia-de-estilo-fantasia.jpg') repeat;
-            background-size: cover;
-            animation: moveBackground 500s linear infinite;
-    
-}
-body {
-    background-color: #1c1c1c;
-    line-height: 1.6;
-    padding: 0px;
-    
 }
 
+body {
+    background: url('/assets/img/fonte-de-galaxia-de-estilo-fantasia.jpg') repeat;
+    background-size: cover;
+    animation: moveBackground 500s linear infinite;
+    background-color: #1c1c1c;
+    line-height: 1.6;
+}
+
+/* Estilos Gerais */
 header {
-    text-align-last: center;
-    padding: 0 15px;
+    text-align: center;
+    font-size: 24px;
+    padding: 15px;
     color: #fff;
     max-width: 800px;
     margin: auto;
-    padding: 0px;
     border-radius: 10px;
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s;
-}
-header {
     width: 100%;
-
-    text-align: center;
-    font-size: 24px;
-    box-sizing: none; /* Garantir que o padding seja considerado na largura total */
-
 }
 
 .nav-list {
-        display: flex;
-        justify-items: left;
-        margin-bottom: 20px;
-        
+    display: flex;
+    justify-content: left;
+    margin-bottom: 20px;
 }
 
 .nav-list li {
@@ -63,9 +51,8 @@ header {
 }
 
 .nav-list a:hover {
-    color:#240361;
+    color: #240361;
 }
-
 
 .nav-list a::after {
     content: '';
@@ -89,7 +76,7 @@ header {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border-bottom:  4px solid #969696;
+    border-bottom: 4px solid #969696;
     margin-bottom: 15px;
 }
 
@@ -98,7 +85,6 @@ header {
     padding: 10px;
     margin: 20px 0;
     box-shadow: none;
-    
 }
 
 .hover-effect:hover {
@@ -108,13 +94,13 @@ header {
 }
 
 button {
-    background-color: #ff562200;
+    background-color: #240361;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 0px 15px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 5px;
+    border-radius: 20px;
     font-size: 16px;
 }
 
@@ -145,16 +131,12 @@ a:hover {
 #content {
     max-width: 800px;
     margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.);
-    transition: background-color 0.3s;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.0); /* Fundo semi-transparente para destacar o conteúdo */
     border-radius: 10px;
-    box-sizing: border-box; /* Garantir que o padding seja considerado na largura total */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    background: rgba(0, 0, 0, 0.0);
 }
-    
 
 #content:hover {
     background-color: transparent;
@@ -162,6 +144,7 @@ a:hover {
 
 #saudacao-btn {
     margin-top: 10px;
+
 }
 
 #mensagem {
@@ -169,12 +152,9 @@ a:hover {
     font-size: 18px;
     color: #ffffff;
 }
+
 /* Estilos Responsivos */
 @media (max-width: 768px) {
-    header {
-        padding: 15px;
-    }
-
     .nav-list {
         flex-direction: column;
         align-items: center;
@@ -199,7 +179,7 @@ a:hover {
     }
 
     #content {
-        padding: 0;
+        padding: 10px;
     }
 
     .hover-effect {
@@ -208,7 +188,7 @@ a:hover {
     }
 
     ul {
-        padding-left: 20px;
+        padding-left: 5px 0;
     }
 
     button {
@@ -216,6 +196,7 @@ a:hover {
         margin: 5px 0;
     }
 }
+
 .project {
     display: flex;
     align-items: center;
@@ -271,6 +252,7 @@ a:hover {
         text-align: center;
     }
 }
+
 @keyframes moveBackground {
     from {
         background-position: 0 0;
