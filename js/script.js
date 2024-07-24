@@ -32,3 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 200);
     });
 });
+
+function copyEmailLink() {
+    var emailLink = document.getElementById("emailLink");
+    emailLink.style.display = "block"; // Mostrar o campo temporariamente
+    emailLink.select();
+    emailLink.setSelectionRange(0, 99999); // Para dispositivos móveis
+    document.execCommand("copy");
+    emailLink.style.display = "none"; // Ocultar o campo novamente
+    alert("Link copiado: " + emailLink.value);
+}
+
+// Movimento da imagem de fundo com o mouse
+document.addEventListener('mousemove', function(e) {
+    var x = e.clientX / window.innerWidth * 100;
+    var y = e.clientY / window.innerHeight * 100;
+    document.body.style.backgroundPosition = x + '%' + ' ' + y + '%';
+});
