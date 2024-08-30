@@ -75,14 +75,14 @@
         <section class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-                <form action="/assets/enviar.php">
-                 <input type="text" name="" id="name" placeholder="Seu nome completo:" required autocomplete="off">
-    
-                 <input type="text" name="" id="email" placeholder="Seu email:" required autocomplete="off">
-                 
-                 <input type="text" name="" id="telefone" placeholder="Seu telefone:" required autocomplete="off">
+                <form action="https://api.staticforms.xyz/submit" method="post"></form>
+                 <input type="text" name="name" id="" placeholder="Seu nome completo:" required autocomplete="off">
+                 <input type="text" name="email" id="" placeholder="Seu email:" required autocomplete="off">
+                 <input type="text" name="telefone" id="" placeholder="Seu telefone:" required autocomplete="off">
                  <textarea name="Digite aqui" id="mensagem" placeholder="Sua mensagem" required autocomplete="off"></textarea>
                  <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                 <input type="hidden" name="accessKey" value="066aa222-c8cb-4ba7-9480-a2206a2687c9">
+                 <input type="hidden" name="redirectTo" value="https://douglasarruda30.github.io/saudacao.html">
                 </form>
             </div>
         </section><!--fim-formulario-->
